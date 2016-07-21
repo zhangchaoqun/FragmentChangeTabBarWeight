@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_above="@+id/mNavigate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mNavigate"
+        android:background="@mipmap/comui_bar_top_shadow"/>
+    <com.fragmentchangetabbarweight.weight.MainNavigateTabBar
+        android:id="@+id/mNavigate"
+        android:layout_alignParentBottom="true"
+        app:containerId="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</RelativeLayout>
